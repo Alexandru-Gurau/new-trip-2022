@@ -1,0 +1,43 @@
+@import '../../../styles/_styles.scss';
+
+.navigation__bar {
+  width: 100%;
+  height: 5rem;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
+
+  &--logo {
+    height: 100%;
+    width: 10rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      color: $color-light;
+    }
+  }
+
+  &--links {
+    height: 100%;
+    width: 30rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+      margin: 0 2rem;
+      color: $color-light;
+      text-transform: uppercase;
+    }
+  }
+}
