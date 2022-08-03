@@ -20,3 +20,21 @@ $color-light: white;
 
 // Shadows
 $shadow-normal: 0 1rem 4rem rgba(black, 0.2);
+
+// Texts sizes and colors
+.header-big {
+  font-size: 4rem;
+}
+.header-normal {
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+
+.paragraph-normal {
+  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+}
+
+.text-white {
+  color: $color-light;
+}

@@ -7,15 +7,15 @@ const NavigationBar = () => {
     <div className='navigation__bar'>
       <div className='navigation__bar--logo'>
         <Link to='/'>
-          <p>LOGO</p>
+          <p className='text-white'>LOGO</p>
         </Link>
       </div>
       <div className='navigation__bar--links'>
         <Link to='/gallery'>
-          <p>Galery</p>
+          <p className='text-white'>Galery</p>
         </Link>
         <Link to='/contact'>
-          <p>Contact</p>
+          <p className='text-white'>Contact</p>
         </Link>
       </div>
     </div>

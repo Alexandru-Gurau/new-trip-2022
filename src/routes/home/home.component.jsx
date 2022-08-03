@@ -1,10 +1,12 @@
 import './home.styles.scss';
 
+import Welcome from '../../components/welcome/welcome.component';
+
 const Home = () => {
   return (
-    <div>
-      <h1>This is a home page</h1>
-    </div>
+    <main className='homepage'>
+      <Welcome />
+    </main>
   );
 };
 
