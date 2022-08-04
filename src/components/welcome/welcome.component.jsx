@@ -1,26 +1,23 @@
-import wallpaper1 from '../../assets/welcome-1.jpg';
-import wallpaper2 from '../../assets/welcome-2.jpg';
-import wallpaper3 from '../../assets/welcome-3.jpg';
 import './welcome.styles.scss';
 
-const Welcome = () => {
-  const wallpapers = [wallpaper1, wallpaper2, wallpaper3];
+import Store from '../../store/store';
 
+const Welcome = () => {
   return (
     <section className='welcome'>
       <div className='welcome__pictures'>
         <img
-          src={wallpapers[0]}
+          src={Store[0].wallpaper}
           alt='trip wallpaper'
           className={`welcome__picture welcome__picture--1`}
         />
         <img
-          src={wallpapers[1]}
+          src={Store[1].wallpaper}
           alt='trip wallpaper'
           className={`welcome__picture welcome__picture--2`}
         />
         <img
-          src={wallpapers[2]}
+          src={Store[2].wallpaper}
           alt='trip wallpaper'
           className={`welcome__picture welcome__picture--3`}
         />

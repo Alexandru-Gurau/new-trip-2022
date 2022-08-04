@@ -1,0 +1,23 @@
+@import '../../styles/styles';
+
+.section-with-review {
+  width: 100%;
+  height: 60rem;
+  margin: 10rem 0;
+  padding: 10rem;
+
+  background-image: url(../../assets/wallpaper-trip-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media only screen and (max-width: $bp-small) {
+    height: 30rem;
+    padding: 5rem 0;
+    justify-content: center;
+  }
+}
