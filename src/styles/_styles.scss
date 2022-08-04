@@ -28,13 +28,29 @@ $shadow-normal: 0 1rem 4rem rgba(black, 0.2);
 .header-normal {
   font-size: 2.5rem;
   letter-spacing: 1.5px;
+  color: $color-secondary;
+}
+.header-small {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  color: $color-secondary;
 }
 
 .paragraph-normal {
   font-size: 1.6rem;
   letter-spacing: 1.3px;
 }
+.paragraph-small {
+  font-size: 1.5rem;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
 
 .text-white {
   color: $color-light;
+}
+
+// 03.08.2022 UNUSED
+.align-center {
+  text-align: center;
 }

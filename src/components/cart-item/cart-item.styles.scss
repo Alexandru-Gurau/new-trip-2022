@@ -1,0 +1,62 @@
+@import '../../styles/styles';
+
+.cart-item {
+  height: 40rem;
+  width: 30rem;
+
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 35rem;
+    width: 22rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 95%;
+    height: 22rem;
+  }
+
+  &__img {
+    width: 100%;
+    z-index: 1;
+    border-radius: 5px;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 60%;
+    }
+  }
+
+  &__box {
+    height: 25rem;
+    width: 25rem;
+    margin-top: -5rem;
+    align-self: center;
+    box-shadow: $shadow-normal;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: rgba($color-light, 0.98);
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 20rem;
+      width: 20rem;
+      margin-top: -2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      align-self: flex-end;
+      width: 20rem;
+      height: 20rem;
+      margin-top: -13rem;
+    }
+  }
+  &__btn {
+    align-self: flex-end;
+    z-index: 3;
+    margin-top: -2.5rem;
+    color: $color-light;
+  }
+}
