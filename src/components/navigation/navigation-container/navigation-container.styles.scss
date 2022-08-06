@@ -3,8 +3,8 @@
 .navigation__container {
   height: 20rem;
   min-width: 80rem;
-  position: absolute;
-  bottom: -10rem;
+  z-index: 2;
+  margin-bottom: 10rem;
   align-self: center;
   border-radius: 5px;
   background-color: rgba($color-primary, 0.95);
@@ -18,5 +18,8 @@
     min-width: 95%;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  @media only screen and (max-width: $bp-small) {
+    height: 10rem;
   }
 }

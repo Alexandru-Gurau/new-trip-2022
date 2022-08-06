@@ -1,0 +1,16 @@
+@import '../../styles/styles';
+
+.card-list {
+  height: auto;
+  width: 100%;
+  margin-bottom: 10rem;
+
+  display: flex;
+  gap: 10rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    gap: 4rem;
+  }
+}
