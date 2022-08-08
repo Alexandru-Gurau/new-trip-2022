@@ -11,6 +11,9 @@ const NavigationBar = () => {
         </Link>
       </div>
       <div className='navigation__bar--links'>
+        <Link to='/trips'>
+          <p className='text-white'>Book now</p>
+        </Link>
         <Link to='/gallery'>
           <p className='text-white'>Galery</p>
         </Link>

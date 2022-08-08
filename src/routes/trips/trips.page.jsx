@@ -23,7 +23,6 @@ const TripsPage = () => {
 
   const onSearchChange = (event) => {
     const searchFieldString = event.target.value.toLocaleLowerCase();
-    console.log(searchFieldString);
     setSearchField(searchFieldString);
   };
 

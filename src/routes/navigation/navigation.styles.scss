@@ -19,9 +19,11 @@
   background-repeat: no-repeat;
 
   @media only screen and (max-width: $bp-medium) {
-    height: 480px;
+    height: 48rem;
   }
   @media only screen and (max-width: $bp-small) {
     margin-bottom: -5rem;
+    height: 30rem;
+    padding: 0 0.4rem;
   }
 }

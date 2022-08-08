@@ -12,6 +12,9 @@
   @media only screen and (max-width: $bp-medium) {
     padding: 0;
   }
+  @media only screen and (max-width: $bp-small) {
+    justify-content: center;
+  }
 
   &--logo {
     height: 100%;
@@ -20,15 +23,24 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 20%;
+      justify-content: center;
+    }
   }
 
   &--links {
     height: 100%;
-    width: 30rem;
+    width: 40rem;
 
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
 
     p {
       margin: 0 2rem;
