@@ -6,6 +6,7 @@ import Home from './routes/home/home.component';
 import Gallery from './routes/gallery/gallery.page';
 import Contact from './routes/contact/contact.page';
 import TripsPage from './routes/trips/trips.page';
+import CheckoutPage from './routes/checkout/checkout.page';
 
 // Style
 import './App.css';
@@ -16,8 +17,9 @@ const App = () => {
       <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path='trips' element={<TripsPage />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/trips' element={<TripsPage />} />
+        <Route path='/checkout' element={<CheckoutPage />} />
       </Route>
     </Routes>
   );
