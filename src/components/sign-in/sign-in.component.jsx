@@ -31,8 +31,6 @@ const SignIn = () => {
     try {
       await signInAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
-      console.log('User: ', currentUser);
-      console.log('Email: ', email);
     } catch (error) {
       console.log('user sign in failed', error);
     }
@@ -69,7 +67,7 @@ const SignIn = () => {
     </div>
   ) : (
     <div className='signin'>
-      <h6 className='header-small'>HELLO </h6>
+      <h6 className='header-small'>HELLO, </h6>
       <Button onClick={() => signOutUser()}>SIGN OUT</Button>
     </div>
   );

@@ -26,6 +26,10 @@ $main-color: black;
     border-bottom: 1px solid $sub-color;
     margin: 2.5rem 0;
 
+    @media only screen and (max-width: $bp-small) {
+      width: 30rem;
+    }
+
     &:focus {
       outline: none;
     }
