@@ -1,0 +1,46 @@
+@import '../../styles/styles';
+
+.register-page {
+  width: 100vw;
+  height: auto;
+  padding: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+  }
+
+  &__container {
+    height: 50rem;
+    width: 70rem;
+    border-radius: 5px;
+    box-shadow: $shadow-normal;
+    background-color: $color-light;
+    padding: 5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
+  }
+
+  &__container input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    height: 3rem;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+  }
+}

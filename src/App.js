@@ -7,7 +7,7 @@ import Gallery from './routes/gallery/gallery.page';
 import Contact from './routes/contact/contact.page';
 import TripsPage from './routes/trips/trips.page';
 import CheckoutPage from './routes/checkout/checkout.page';
-import UserPage from './routes/user/user.page';
+import RegisterPage from './routes/register/register.page';
 
 // Style
 import './App.css';
@@ -20,7 +20,7 @@ const App = () => {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/trips' element={<TripsPage />} />
-        <Route path='/user-page' element={<UserPage />} />
+        <Route path='/register' element={<RegisterPage />} />
         <Route path='/checkout' element={<CheckoutPage />} />
       </Route>
     </Routes>

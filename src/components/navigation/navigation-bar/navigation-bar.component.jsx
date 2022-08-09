@@ -12,7 +12,6 @@ const NavigationBar = () => {
 
   const handleCart = () => {
     setIsCartOpen(!isCartOpen);
-    console.log(isCartOpen);
   };
 
   return (
