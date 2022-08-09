@@ -29,6 +29,13 @@
     @media only screen and (max-width: $bp-small) {
       width: 100%;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__container input {
