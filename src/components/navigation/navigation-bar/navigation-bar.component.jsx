@@ -4,6 +4,7 @@ import emptyBag from '../../../assets/shopping-bag-empty.svg';
 import user from '../../../assets/user.svg';
 
 import Dropdown from '../../dropdown/dropdown.component';
+import SignIn from '../../sign-in/sign-in.component';
 
 import './navigation-bar.styles.scss';
 
@@ -13,7 +14,6 @@ const NavigationBar = () => {
   const handleCart = () => {
     setIsCartOpen(!isCartOpen);
   };
-
   return (
     <div className='navigation__bar'>
       <div className='navigation__bar--logo'>
@@ -37,7 +37,7 @@ const NavigationBar = () => {
           />
         </div>
       </div>
-      {isCartOpen ? <Dropdown /> : null}
+      {isCartOpen ? <Dropdown>{<SignIn />}</Dropdown> : null}
     </div>
   );
 };

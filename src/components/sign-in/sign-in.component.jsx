@@ -1,17 +1,18 @@
 import './sign-in.styles.scss';
 
+import { useContext } from 'react';
+import { UserContext } from '../../context/user.context';
+
 import Button from '../button/button.component';
-import { useState } from 'react';
 
 const SignIn = () => {
-  const [currentUser, setCurrentUser] = useState(null);
+  let { currentUser } = useContext(UserContext);
 
   const handleClick = () => {
-    setCurrentUser('Alex');
+    console.log(currentUser);
   };
-
   const logOut = () => {
-    setCurrentUser(null);
+    console.log(currentUser);
   };
 
   return currentUser === null ? (
