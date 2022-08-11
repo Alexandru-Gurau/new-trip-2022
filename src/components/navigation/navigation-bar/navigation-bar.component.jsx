@@ -37,7 +37,11 @@ const NavigationBar = () => {
           />
         </div>
       </div>
-      {isCartOpen ? <Dropdown>{<SignIn />}</Dropdown> : null}
+      {isCartOpen ? (
+        <Dropdown handleCart={handleCart}>
+          {<SignIn handleCart={handleCart} />}
+        </Dropdown>
+      ) : null}
     </div>
   );
 };

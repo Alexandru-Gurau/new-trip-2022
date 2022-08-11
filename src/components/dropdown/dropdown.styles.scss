@@ -10,6 +10,7 @@
   background-color: rgba($color-light, 0.98);
   border-radius: 5px;
   padding: 1rem 0;
+  z-index: 5;
 
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@
 
   @media only screen and (max-width: $bp-small) {
     width: 100%;
-    height: 30rem;
+    height: 35rem;
     border-radius: 0;
   }
 
