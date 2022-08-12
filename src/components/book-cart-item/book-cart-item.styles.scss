@@ -1,0 +1,67 @@
+@import '../../styles/styles';
+
+.book-cart-item {
+  height: 10rem;
+  width: 90%;
+  margin: 3rem 0;
+
+  display: flex;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 95%;
+    height: 22rem;
+    flex-direction: column;
+  }
+
+  &__img {
+    height: 100%;
+    width: auto;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 60%;
+    }
+  }
+
+  &__btn {
+    color: $color-light;
+  }
+
+  &__box {
+    height: 100%;
+    width: 25rem;
+    padding: 0 1rem;
+    margin-right: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+      box-shadow: $shadow-normal;
+      z-index: 2;
+      border-radius: 5px;
+      background-color: rgba($color-light, 0.98);
+      padding: 2rem;
+      align-self: flex-end;
+      width: 20rem;
+      height: 20rem;
+      margin-top: -13rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__action {
+    height: 10rem;
+    width: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      align-self: flex-end;
+      flex-direction: row;
+      width: 85%;
+    }
+  }
+}

@@ -41,7 +41,7 @@ const SignIn = ({ handleCart }) => {
     resetFormFields();
     setTimeout(() => {
       tryLoginAgain();
-    }, 3000);
+    }, 2000);
   };
 
   const handleSubmit = async (event) => {
