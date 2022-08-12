@@ -1,15 +1,19 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import emptyBag from '../../../assets/shopping-bag-empty.svg';
-import user from '../../../assets/user.svg';
+import { UserContext } from '../../../context/user.context';
 
 import Dropdown from '../../dropdown/dropdown.component';
 import SignIn from '../../sign-in/sign-in.component';
+
+import emptyBag from '../../../assets/shopping-bag-empty.svg';
+import user from '../../../assets/user.svg';
+import userLoggedIn from '../../../assets/user-logged-in.svg';
 
 import './navigation-bar.styles.scss';
 
 const NavigationBar = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { currentUser } = useContext(UserContext);
 
   const handleCart = () => {
     setIsCartOpen(!isCartOpen);
@@ -29,12 +33,21 @@ const NavigationBar = () => {
           <img src={emptyBag} alt='empty bag' className='icon' />
         </Link>
         <div className='navigation__bar--link'>
-          <img
-            src={user}
-            alt='user'
-            className='icon'
-            onClick={() => handleCart()}
-          />
+          {currentUser === null ? (
+            <img
+              src={user}
+              alt='user'
+              className='icon'
+              onClick={() => handleCart()}
+            />
+          ) : (
+            <img
+              src={userLoggedIn}
+              alt='user'
+              className='icon'
+              onClick={() => handleCart()}
+            />
+          )}
         </div>
       </div>
       {isCartOpen ? (

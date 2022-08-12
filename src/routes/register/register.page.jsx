@@ -36,7 +36,7 @@ const RegisterPage = () => {
         password
       );
 
-      await createUserDocumentFromAuth(user, { displayName });
+      await createUserDocumentFromAuth(user, { displayName: displayName });
       resetFormFields();
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
@@ -77,7 +77,6 @@ const RegisterPage = () => {
             name='email'
             value={email}
           />
-
           <FormInput
             label='Password'
             type='password'
@@ -86,7 +85,6 @@ const RegisterPage = () => {
             name='password'
             value={password}
           />
-
           <FormInput
             label='Confirm Password'
             type='password'
