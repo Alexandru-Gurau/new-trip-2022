@@ -1,21 +1,24 @@
 import './cart-list.styles.scss';
 import CartItem from '../cart-item/cart-item.component';
 
-const CardList = ({ trips }) => (
-  <div className='card-list'>
-    {trips.map((trip) => {
-      return (
-        <CartItem
-          key={trip.id}
-          trip={trip}
-          img={trip.wallpaper}
-          header={trip.header}
-          text={trip.text}
-          price={trip.price}
-        />
-      );
-    })}
-  </div>
-);
+const CardList = ({ cartItems }) => {
+  return (
+    <div className='card-list'>
+      {cartItems.map((el) => {
+        return (
+          <CartItem
+            key={el.id}
+            id={el.id}
+            cartItems={cartItems}
+            img={el.wallpaper}
+            header={el.header}
+            text={el.text}
+            price={el.price}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 export default CardList;

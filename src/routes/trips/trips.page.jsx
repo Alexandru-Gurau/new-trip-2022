@@ -36,7 +36,7 @@ const TripsPage = () => {
           />
         }
       </NavigationContainer>
-      <CardList trips={filteredTrips} />
+      <CardList cartItems={filteredTrips} />
       <Footer />
     </div>
   );
