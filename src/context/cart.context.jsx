@@ -1,17 +1,17 @@
 import { createContext, useState } from 'react';
 
 const addCartItem = (cartItems, productToAdd) => {
-  const existingCartItem = cartItems.find((cartItem) => {
-    return cartItem.id === productToAdd.id;
-  });
-  if (existingCartItem) {
-    return cartItems.map((cartItem) => cartItem.id === productToAdd.id);
-  }
+  const existingCartItem = cartItems.find(
+    (cartItem) => cartItem.id === productToAdd.id
+  );
+
+  if (existingCartItem) return cartItems;
+
   return [...cartItems, { ...productToAdd }];
 };
 
-// Remove
-// Clear
+const clearCartItem = (cartItems, cartItemToClear) =>
+  cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
 
 export const CartContext = createContext({
   cartItems: [],
@@ -25,9 +25,14 @@ export const CartProvider = ({ children }) => {
     setCartItems(addCartItem(cartItems, productToAdd));
   };
 
+  const clearItemFromCart = (cartItemToClear) => {
+    setCartItems(clearCartItem(cartItems, cartItemToClear));
+  };
+
   const value = {
     addItemToCart,
     cartItems,
+    clearItemFromCart,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

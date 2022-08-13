@@ -1,8 +1,15 @@
 import './book-cart-item.styles.scss';
 import Button from '../button/button.component';
 
+import { useContext } from 'react';
+import { CartContext } from '../../context/cart.context';
+
 const BookCartItem = (cartItems) => {
   const { img, header, text, price } = cartItems;
+  const { clearItemFromCart } = useContext(CartContext);
+
+  const removeProductToCart = () => clearItemFromCart(cartItems);
+
   return (
     <div className='book-cart-item'>
       <img src={img} alt={header} className='book-cart-item__img' />
@@ -12,7 +19,12 @@ const BookCartItem = (cartItems) => {
       </div>
       <div className='book-cart-item__action'>
         <h3 className='header-small'>Price: {price}€</h3>
-        <Button className='button book-cart-item__btn'>Delete</Button>
+        <Button
+          onClick={removeProductToCart}
+          className='button book-cart-item__btn'
+        >
+          Delete
+        </Button>
       </div>
     </div>
   );

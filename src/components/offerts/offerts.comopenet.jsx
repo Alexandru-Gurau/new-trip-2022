@@ -7,13 +7,14 @@ const Offerts = () => (
   <div className='offerts'>
     <h3 className='header-normal'>Rooms & Ratings</h3>
     <div className='offerts__container'>
-      {Store.filter((_, idx) => idx < 3).map((cartItem) => (
+      {Store.filter((_, idx) => idx < 3).map((el) => (
         <CartItem
-          key={cartItem.id}
-          img={cartItem.wallpaper}
-          price={cartItem.price}
-          header={cartItem.header}
-          text={cartItem.text}
+          key={el.id}
+          id={el.id}
+          img={el.wallpaper}
+          price={el.price}
+          header={el.header}
+          text={el.text}
         />
       ))}
     </div>
