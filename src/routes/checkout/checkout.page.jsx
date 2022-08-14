@@ -1,12 +1,15 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/cart.context';
 import BookCartItem from '../../components/book-cart-item/book-cart-item.component';
-import Button from '../../components/button/button.component';
+import PaymentForm from '../../components/payment-form/payment-form.component';
 
 import './checkout.styles.scss';
 
 const CheckoutPage = () => {
   const { cartItems } = useContext(CartContext);
+  const totalPrice = cartItems
+    .map((el) => el.price)
+    .reduce((curEl, acc) => curEl + acc, 0);
 
   return (
     <div className='checkout-page'>
@@ -26,10 +29,12 @@ const CheckoutPage = () => {
             />
           ))
         )}
+        {cartItems.length > 0 ? <h1>TOTAL: {totalPrice}€</h1> : ''}
+
         {cartItems.length === 0 ? (
           <p className='paragraph-big'>Add a trip</p>
         ) : (
-          <Button className='button text-white mt-large'>Pay now</Button>
+          <PaymentForm />
         )}
       </div>
     </div>

@@ -5,6 +5,9 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Elements } from '@stripe/react-stripe-js';
+import { stripePromise } from './utils/stripe/stripe.utils';
+
 import { UserProvider } from './context/user.context';
 import { CartProvider } from './context/cart.context';
 
@@ -14,7 +17,9 @@ root.render(
     <BrowserRouter>
       <UserProvider>
         <CartProvider>
-          <App />
+          <Elements stripe={stripePromise}>
+            <App />
+          </Elements>
         </CartProvider>
       </UserProvider>
     </BrowserRouter>

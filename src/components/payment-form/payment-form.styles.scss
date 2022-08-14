@@ -1,0 +1,30 @@
+@import '../../styles/styles';
+
+.payment-container {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-form {
+  width: 50rem;
+  height: auto;
+  margin-top: 5rem;
+  padding: 5rem;
+  border-radius: 5px;
+  // box-shadow: $shadow-normal;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pay {
+  width: 30rem;
+  height: 2rem;
+}
