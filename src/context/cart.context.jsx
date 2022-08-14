@@ -29,10 +29,20 @@ export const CartProvider = ({ children }) => {
     setCartItems(clearCartItem(cartItems, cartItemToClear));
   };
 
+  const emptyCartItems = () => {
+    setCartItems([]);
+  };
+
+  const totalPrice = cartItems
+    .map((el) => el.price)
+    .reduce((curEl, acc) => curEl + acc, 0);
+
   const value = {
     addItemToCart,
     cartItems,
     clearItemFromCart,
+    emptyCartItems,
+    totalPrice,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

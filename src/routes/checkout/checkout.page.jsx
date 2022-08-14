@@ -6,10 +6,7 @@ import PaymentForm from '../../components/payment-form/payment-form.component';
 import './checkout.styles.scss';
 
 const CheckoutPage = () => {
-  const { cartItems } = useContext(CartContext);
-  const totalPrice = cartItems
-    .map((el) => el.price)
-    .reduce((curEl, acc) => curEl + acc, 0);
+  const { cartItems, totalPrice } = useContext(CartContext);
 
   return (
     <div className='checkout-page'>

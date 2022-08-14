@@ -11,13 +11,11 @@ const PaymentForm = () => {
   const stripe = useStripe();
   const elements = useElements();
 
-  const { cartItems } = useContext(CartContext);
+  const { totalPrice, emptyCartItems } = useContext(CartContext);
   const { currentUser } = useContext(UserContext);
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
 
-  const totalPrice = cartItems
-    .map((el) => el.price)
-    .reduce((curEl, acc) => curEl + acc, 0);
+  const removeCartItems = () => emptyCartItems();
 
   const paymentHandler = async (e) => {
     e.preventDefault();
@@ -56,7 +54,7 @@ const PaymentForm = () => {
       alert(`Error: please try again.`);
     } else {
       if (paymentResult.paymentIntent.status === 'succeeded') {
-        alert('Payment successful');
+        removeCartItems();
       }
     }
   };
