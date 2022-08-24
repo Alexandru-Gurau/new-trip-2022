@@ -1,7 +1,7 @@
 @import '../../styles/styles';
 
 .cart-item {
-  height: 40rem;
+  height: 45rem;
   width: 30rem;
 
   display: flex;
@@ -28,7 +28,7 @@
 
   &__box {
     height: 25rem;
-    width: 25rem;
+    width: 27rem;
     margin-top: -5rem;
     align-self: center;
     box-shadow: $shadow-normal;
