@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/cart.context';
 import BookCartItem from '../../components/book-cart-item/book-cart-item.component';
 import PaymentForm from '../../components/payment-form/payment-form.component';
+import { Link } from 'react-router-dom';
+import TripsPage from '../trips/trips.page';
 
 import './checkout.styles.scss';
 
@@ -29,7 +31,9 @@ const CheckoutPage = () => {
         {cartItems.length > 0 ? <h1>TOTAL: {totalPrice}€</h1> : ''}
 
         {cartItems.length === 0 ? (
-          <p className='paragraph-big'>Add a trip</p>
+          <Link className='text-black' to='/trips' element={<TripsPage />}>
+            Add a trip
+          </Link>
         ) : (
           <PaymentForm />
         )}

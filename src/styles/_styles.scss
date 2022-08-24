@@ -14,10 +14,13 @@ $bp-smallest: 31.25em; // 500px
 // Colors
 $color-primary: #edf2f4;
 $color-secondary: #00bbf9;
+$color-orange: #ff9f1c;
 
 // Texts colors
 $color-light: white;
-$color-black: black;
+
+$color-black: #3e5c76;
+$color-gray-dark: #14213d;
 
 // Shadows
 $shadow-normal: 0 1rem 4rem rgba(black, 0.2);
@@ -36,15 +39,20 @@ $shadow-normal: 0 1rem 4rem rgba(black, 0.2);
 .header-normal {
   font-size: 2.5rem;
   letter-spacing: 1.5px;
-  color: $color-secondary;
+  color: $color-black;
 }
 .header-small {
   font-size: 2rem;
   letter-spacing: 1.5px;
-  color: $color-secondary;
+  color: $color-black;
 
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.6rem;
+    letter-spacing: normal;
+  }
   @media only screen and (max-width: $bp-small) {
     font-size: 1.6rem;
+    letter-spacing: 1.2px;
   }
 }
 
@@ -58,8 +66,15 @@ $shadow-normal: 0 1rem 4rem rgba(black, 0.2);
 }
 .paragraph-small {
   font-size: 1.5rem;
-  letter-spacing: normal;
+  letter-spacing: 1.6px;
   line-height: 1.5;
+
+  @media only screen and (max-width: $bp-medium) {
+    letter-spacing: normal;
+  }
+  @media only screen and (max-width: $bp-small) {
+    letter-spacing: 1.2px;
+  }
 }
 
 .text-white {
