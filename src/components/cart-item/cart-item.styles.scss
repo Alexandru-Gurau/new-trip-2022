@@ -8,12 +8,12 @@
   flex-direction: column;
 
   @media only screen and (max-width: $bp-medium) {
-    height: 35rem;
+    height: 40rem;
     width: 22rem;
   }
   @media only screen and (max-width: $bp-small) {
+    height: 30rem;
     width: 95%;
-    // height: 22rem;
   }
 
   &__img {
@@ -42,14 +42,14 @@
     align-items: flex-start;
 
     @media only screen and (max-width: $bp-medium) {
-      height: 20rem;
+      height: 25rem;
       width: 20rem;
       margin-top: -2rem;
     }
     @media only screen and (max-width: $bp-small) {
       align-self: flex-end;
       width: 20rem;
-      height: 23rem;
+      height: 25rem;
       margin-top: -13rem;
     }
   }
@@ -58,5 +58,6 @@
     z-index: 3;
     margin-top: -2.5rem;
     color: $color-light;
+    font-size: 1.4rem;
   }
 }

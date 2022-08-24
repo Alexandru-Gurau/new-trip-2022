@@ -28,7 +28,11 @@ const CheckoutPage = () => {
             />
           ))
         )}
-        {cartItems.length > 0 ? <h1>TOTAL: {totalPrice}€</h1> : ''}
+        {cartItems.length > 0 ? (
+          <h1 className='header-large mt-large'>TOTAL: {totalPrice}€</h1>
+        ) : (
+          ''
+        )}
 
         {cartItems.length === 0 ? (
           <Link className='text-black' to='/trips' element={<TripsPage />}>

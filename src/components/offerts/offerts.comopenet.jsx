@@ -5,7 +5,7 @@ import Store from '../../store/store.jsx';
 
 const Offerts = () => (
   <div className='offerts'>
-    <h3 className='header-normal'>Rooms & Ratings</h3>
+    <h3 className='header-normal mb-large'>Rooms & Ratings</h3>
     <div className='offerts__container'>
       {Store.filter((_, idx) => idx < 3).map((el) => (
         <CartItem

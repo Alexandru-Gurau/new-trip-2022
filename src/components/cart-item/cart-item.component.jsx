@@ -16,9 +16,10 @@ const CartItem = (cartItems) => {
       <div className='cart-item__box'>
         <h3 className='header-small'>{header}</h3>
         <p className='paragraph-small'>{text}</p>
+        <h3 className='header-small mt-medim align-right'>Total: {price}€</h3>
       </div>
       <Button onClick={addProductToCart} className='button cart-item__btn'>
-        {price}€
+        Add to cart
       </Button>
     </div>
   );
