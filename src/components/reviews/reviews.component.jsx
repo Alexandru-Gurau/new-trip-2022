@@ -23,7 +23,7 @@ const Reviews = () => (
       {reviews.map((el, i) => (
         <Slide key={el.id} index={el[i]}>
           <p className='paragraph-small'>{el.review}</p>
-          <h6 className='header-small'>{el.name}</h6>
+          <h3 className='header-small'>{el.name}</h3>
         </Slide>
       ))}
     </Slider>
