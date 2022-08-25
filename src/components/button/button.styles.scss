@@ -9,7 +9,7 @@
   margin: 0 1rem;
   letter-spacing: 1.6px;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bolder;
   text-transform: uppercase;
   transition: all 0.3s ease-out;
@@ -17,12 +17,10 @@
 .button__normal {
   background-color: $color-secondary;
   color: $color-light;
-  font-size: 1.4rem;
 }
 .button__delete {
   background-color: $color-red;
   color: $color-light;
-  font-size: 1.4rem;
 }
 
 .button:active {

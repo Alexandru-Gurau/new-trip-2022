@@ -10,7 +10,7 @@ import {
 } from '../../utils/firebase.utils';
 
 import Button from '../button/button.component';
-import userError from '../../assets/user-error.svg';
+import userError from '../../assets/icons/user/user-error.svg';
 
 const defaultFormFields = {
   email: '',

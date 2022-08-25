@@ -1,8 +1,8 @@
 import './footer.styles.scss';
-import github from '../../assets/github.svg';
-import facebook from '../../assets/facebook.svg';
-import telegram from '../../assets/telegram.svg';
-import protonmail from '../../assets/protonmail.svg';
+import github from '../../assets/icons/social/github.svg';
+import facebook from '../../assets/icons/social/facebook.svg';
+import telegram from '../../assets/icons/social/telegram.svg';
+import protonmail from '../../assets/icons/social/protonmail.svg';
 
 const Footer = () => (
   <div className='footer'>

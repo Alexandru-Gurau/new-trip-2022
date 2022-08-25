@@ -1,31 +1,31 @@
-import wallpaper1 from '../../src/assets/welcome-1.jpg';
-import wallpaper2 from '../../src/assets/welcome-2.jpg';
-import wallpaper3 from '../../src/assets/welcome-3.jpg';
+import wallpaper1 from '../../src/assets/trips/welcome-1.jpg';
+import wallpaper2 from '../../src/assets/trips/welcome-2.jpg';
+import wallpaper3 from '../../src/assets//trips/welcome-3.jpg';
 
 // Trips
-import bali1 from '../../src/assets/trip-bali-1.jpg';
-import bali2 from '../../src/assets/trip-bali-2.jpg';
-import bali3 from '../../src/assets/trip-bali-3.jpg';
+import bali1 from '../../src/assets/previews/trip-bali-1--small.png';
+import bali2 from '../../src/assets/previews/trip-bali-2--small.png';
+import bali3 from '../../src/assets/previews/trip-bali-3--small.png';
 
-import thailand1 from '../../src/assets/trip-thailand-1.jpg';
-import thailand2 from '../../src/assets/trip-thailand-2.jpg';
-import thailand3 from '../../src/assets/trip-thailand-3.jpg';
+import thailand1 from '../../src/assets/previews/trip-thailand-1--small.png';
+import thailand2 from '../../src/assets/previews/trip-thailand-2--small.png';
+import thailand3 from '../../src/assets/previews/trip-thailand-3--small.png';
 
-import malaysia1 from '../../src/assets/trip-malaysia-1.jpg';
-import malaysia2 from '../../src/assets/trip-malaysia-2.jpg';
-import malaysia3 from '../../src/assets/trip-malaysia-3.jpg';
+import malaysia1 from '../../src/assets/previews/trip-malaysia-1--small.png';
+import malaysia2 from '../../src/assets/previews/trip-malaysia-2--small.png';
+import malaysia3 from '../../src/assets/previews/trip-malaysia-3--small.png';
 
-import singapore1 from '../../src/assets/trip-singapore-1.jpg';
-import singapore2 from '../../src/assets/trip-singapore-2.jpg';
-import singapore3 from '../../src/assets/trip-singapore-3.jpg';
+import singapore1 from '../../src/assets/previews/trip-singapore-1--small.png';
+import singapore2 from '../../src/assets/previews/trip-singapore-2--small.png';
+import singapore3 from '../../src/assets/previews/trip-singapore-3--small.png';
 
-import dubai1 from '../../src/assets/trip-dubai-1.jpg';
-import dubai2 from '../../src/assets/trip-dubai-2.jpg';
-import dubai3 from '../../src/assets/trip-dubai-3.jpg';
+import dubai1 from '../../src/assets/previews/trip-dubai-1--small.png';
+import dubai2 from '../../src/assets/previews/trip-dubai-2--small.png';
+import dubai3 from '../../src/assets/previews/trip-dubai-3--small.png';
 
-import maldives1 from '../../src/assets/trip-maldives-1.jpg';
-import maldives2 from '../../src/assets/trip-maldives-2.jpg';
-import maldives3 from '../../src/assets/trip-maldives-3.jpg';
+import maldives1 from '../../src/assets/previews/trip-maldives-1--small.png';
+import maldives2 from '../../src/assets/previews/trip-maldives-2--small.png';
+import maldives3 from '../../src/assets/previews/trip-maldives-3--small.png';
 
 // Store
 const Store = [

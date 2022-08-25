@@ -1,19 +1,23 @@
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../context/user.context';
+import { CartContext } from '../../../context/cart.context';
 
 import Dropdown from '../../dropdown/dropdown.component';
 import SignIn from '../../sign-in/sign-in.component';
 
-import emptyBag from '../../../assets/shopping-bag-empty.svg';
-import user from '../../../assets/user.svg';
-import userLoggedIn from '../../../assets/user-logged-in.svg';
+import emptyBag from '../../../assets/icons/cart/shopping-bag-empty.svg';
+import fullBag from '../../../assets/icons/cart/shopping-bag-full.svg';
+
+import user from '../../../assets/icons/user/user.svg';
+import userLoggedIn from '../../../assets/icons/user/user-logged-in.svg';
 
 import './navigation-bar.styles.scss';
 
 const NavigationBar = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const { currentUser } = useContext(UserContext);
+  const { cartItems } = useContext(CartContext);
 
   const handleCart = () => {
     setIsCartOpen(!isCartOpen);
@@ -30,7 +34,11 @@ const NavigationBar = () => {
           <p className='text-white navigation__bar--link'>BOOKING</p>
         </Link>
         <Link to='/checkout'>
-          <img src={emptyBag} alt='empty bag' className='icon' />
+          <img
+            src={cartItems.length === 0 ? emptyBag : fullBag}
+            alt='bag'
+            className='icon'
+          />
         </Link>
         <div className='navigation__bar--link'>
           {currentUser === null ? (
