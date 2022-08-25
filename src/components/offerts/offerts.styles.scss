@@ -24,6 +24,7 @@
 
     @media only screen and (max-width: $bp-medium) {
       height: 40rem;
+      gap: 2rem;
     }
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
