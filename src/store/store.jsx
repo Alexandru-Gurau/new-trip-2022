@@ -1,8 +1,12 @@
-import wallpaper1 from '../../src/assets/trips/welcome-1.jpg';
-import wallpaper2 from '../../src/assets/trips/welcome-2.jpg';
-import wallpaper3 from '../../src/assets//trips/welcome-3.jpg';
+// import wallpaper1 from '../../src/assets/trips/welcome-1.jpg';
+// import wallpaper2 from '../../src/assets/trips/welcome-2.jpg';
+// import wallpaper3 from '../../src/assets//trips/welcome-3.jpg';
 
 // Trips
+import wallpaperPrev1 from '../../src/assets/previews/welcome-1--small.png';
+import wallpaperPrev2 from '../../src/assets/previews/welcome-2--small.png';
+import wallpaperPrev3 from '../../src/assets//previews/welcome-3--small.png';
+
 import bali1 from '../../src/assets/previews/trip-bali-1--small.png';
 import bali2 from '../../src/assets/previews/trip-bali-2--small.png';
 import bali3 from '../../src/assets/previews/trip-bali-3--small.png';
@@ -31,21 +35,21 @@ import maldives3 from '../../src/assets/previews/trip-maldives-3--small.png';
 const Store = [
   {
     id: 1,
-    wallpaper: wallpaper1,
+    wallpaper: wallpaperPrev1,
     price: 150,
     header: 'Tenerife - Spain',
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
     id: 2,
-    wallpaper: wallpaper2,
+    wallpaper: wallpaperPrev2,
     price: 250,
     header: 'Santorini - Greek',
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
     id: 3,
-    wallpaper: wallpaper3,
+    wallpaper: wallpaperPrev3,
     price: 350,
     header: 'Sicily - Italy',
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
