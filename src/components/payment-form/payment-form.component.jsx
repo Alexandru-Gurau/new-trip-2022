@@ -66,7 +66,7 @@ const PaymentForm = () => {
         <CardElement className='pay' />
         <Button
           disabled={isProcessingPayment}
-          className='button text-white mt-large'
+          className='button button__normal mt-large'
         >
           Pay now
         </Button>

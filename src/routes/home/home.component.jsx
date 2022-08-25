@@ -14,7 +14,7 @@ const Home = () => {
     <main className='homepage'>
       <NavigationContainer>
         <Link to='/trips'>
-          <Button>Book now</Button>
+          <Button className='button button__normal'>Book now</Button>
         </Link>
       </NavigationContainer>
       <Welcome />

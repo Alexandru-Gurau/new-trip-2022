@@ -18,7 +18,10 @@ const CartItem = (cartItems) => {
         <p className='paragraph-small'>{text}</p>
         <h3 className='header-small mt-medim align-right'>Total: {price}€</h3>
       </div>
-      <Button onClick={addProductToCart} className='button cart-item__btn'>
+      <Button
+        onClick={addProductToCart}
+        className='button button__normal cart-item__btn'
+      >
         Add to cart
       </Button>
     </div>

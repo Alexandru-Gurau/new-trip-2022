@@ -93,7 +93,9 @@ const RegisterPage = () => {
             name='confirmPassword'
             value={confirmPassword}
           />
-          <Button type='submit'>Sign Up</Button>
+          <Button className='button button__normal' type='submit'>
+            Sign Up
+          </Button>
         </form>
       </div>
     </div>

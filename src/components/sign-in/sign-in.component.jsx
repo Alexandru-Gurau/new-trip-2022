@@ -93,7 +93,9 @@ const SignIn = ({ handleCart }) => {
           name='password'
           value={password}
         />
-        <Button type='submit'>LOGIN</Button>
+        <Button className='button button__normal' type='submit'>
+          LOGIN
+        </Button>
       </form>
     </div>
   ) : (
@@ -102,7 +104,9 @@ const SignIn = ({ handleCart }) => {
         {currentUser.displayName ? currentUser.displayName : 'Welcome'}
       </h6>
       <p className='paragraph-normal'>You are logged in.</p>
-      <Button onClick={() => signOutUser()}>SIGN OUT</Button>
+      <Button className='button button__normal' onClick={() => signOutUser()}>
+        SIGN OUT
+      </Button>
     </div>
   );
 };

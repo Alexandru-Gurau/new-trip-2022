@@ -19,10 +19,7 @@ const BookCartItem = (cartItems) => {
       </div>
       <div className='book-cart-item__action'>
         <h3 className='header-small'>Price: {price}€</h3>
-        <Button
-          onClick={removeProductToCart}
-          className='button book-cart-item__btn'
-        >
+        <Button onClick={removeProductToCart} className='button button__delete'>
           Delete
         </Button>
       </div>
