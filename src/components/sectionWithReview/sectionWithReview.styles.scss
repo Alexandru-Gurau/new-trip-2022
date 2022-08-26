@@ -2,7 +2,7 @@
 
 .section-with-review {
   width: 100%;
-  height: 60rem;
+  height: 80rem;
   margin: 10rem 0;
   padding: 10rem;
 
@@ -19,9 +19,9 @@
     margin: 5rem 0;
   }
   @media only screen and (max-width: $bp-small) {
-    height: 30rem;
+    height: 35rem;
     padding: 5rem 0;
-    margin: 10rem 0;
+    margin-bottom: 5rem;
     justify-content: center;
   }
 }
