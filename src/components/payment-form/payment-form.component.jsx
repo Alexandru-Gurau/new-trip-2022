@@ -6,6 +6,7 @@ import './payment-form.styles.scss';
 
 import { CartContext } from '../../context/cart.context';
 import { UserContext } from '../../context/user.context';
+import { PaymentContext } from '../../context/paymentStatus.context';
 
 const PaymentForm = () => {
   const stripe = useStripe();
@@ -14,8 +15,13 @@ const PaymentForm = () => {
   const { totalPrice, emptyCartItems } = useContext(CartContext);
   const { currentUser } = useContext(UserContext);
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
+  const { setPaymentStatus } = useContext(PaymentContext);
 
-  const removeCartItems = () => emptyCartItems();
+  const paymentSuccess = () => setPaymentStatus(true);
+
+  const removeCartItems = () => {
+    emptyCartItems();
+  };
 
   const paymentHandler = async (e) => {
     e.preventDefault();
@@ -51,10 +57,11 @@ const PaymentForm = () => {
 
     setIsProcessingPayment(false);
     if (paymentResult.error) {
-      alert(`Error: please try again.`);
+      alert('Something goes wrong, please check your card credentials');
     } else {
       if (paymentResult.paymentIntent.status === 'succeeded') {
         removeCartItems();
+        paymentSuccess();
       }
     }
   };
