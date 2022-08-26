@@ -33,7 +33,7 @@ const CheckoutPage = () => {
               <BookCartItem
                 key={el.id}
                 id={el.id}
-                img={el.img}
+                preview={el.preview}
                 price={el.price}
                 header={el.header}
                 text={el.text}

@@ -5,14 +5,14 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/cart.context';
 
 const BookCartItem = (cartItems) => {
-  const { img, header, text, price } = cartItems;
+  const { preview, header, text, price } = cartItems;
   const { clearItemFromCart } = useContext(CartContext);
 
   const removeProductToCart = () => clearItemFromCart(cartItems);
 
   return (
     <div className='book-cart-item'>
-      <img src={img} alt={header} className='book-cart-item__img' />
+      <img src={preview} alt={header} className='book-cart-item__img' />
       <div className='book-cart-item__box'>
         <h3 className='header-small'>{header}</h3>
         <p className='paragraph-small'>{text}</p>

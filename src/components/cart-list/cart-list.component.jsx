@@ -10,7 +10,7 @@ const CardList = ({ cartItems }) => {
             key={el.id}
             id={el.id}
             cartItems={cartItems}
-            img={el.preview}
+            preview={el.preview}
             header={el.header}
             text={el.text}
             price={el.price}

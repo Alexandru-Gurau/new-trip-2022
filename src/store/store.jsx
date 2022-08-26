@@ -34,6 +34,8 @@ const Store = [
     preview: wallpaperPrev1,
     price: 150,
     header: 'Tenerife - Spain',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -41,6 +43,9 @@ const Store = [
     preview: wallpaperPrev2,
     price: 250,
     header: 'Santorini - Greek',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -48,6 +53,9 @@ const Store = [
     preview: wallpaperPrev3,
     price: 350,
     header: 'Sicily - Italy',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -55,6 +63,9 @@ const Store = [
     preview: bali1,
     price: 300,
     header: 'Bali - Indonesia',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -62,6 +73,9 @@ const Store = [
     preview: bali2,
     price: 480,
     header: 'Bali - Indonesia',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -69,6 +83,9 @@ const Store = [
     preview: bali3,
     price: 550,
     header: 'Bali - Indonesia',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -76,6 +93,9 @@ const Store = [
     preview: thailand1,
     price: 550,
     header: 'Hua Hin - Thailand',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -83,6 +103,9 @@ const Store = [
     preview: thailand2,
     price: 550,
     header: 'Ko Samui - Thailand',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -90,6 +113,9 @@ const Store = [
     preview: thailand3,
     price: 550,
     header: 'Satun - Thailand',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -97,6 +123,9 @@ const Store = [
     preview: malaysia1,
     price: 550,
     header: 'Petronas - Malaysia',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -104,6 +133,9 @@ const Store = [
     preview: malaysia2,
     price: 550,
     header: 'Petronas - Malaysia',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -111,6 +143,9 @@ const Store = [
     preview: malaysia3,
     price: 550,
     header: 'Melaka - Malaysia',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -118,6 +153,9 @@ const Store = [
     preview: singapore1,
     price: 550,
     header: 'City - Singapore',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -125,6 +163,9 @@ const Store = [
     preview: singapore2,
     price: 550,
     header: 'Marina Bay - Singapore',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -132,6 +173,9 @@ const Store = [
     preview: singapore3,
     price: 550,
     header: 'Merlion - Singapore',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -139,6 +183,9 @@ const Store = [
     preview: dubai1,
     price: 550,
     header: 'Burj Khalifa - Dubai',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -146,6 +193,9 @@ const Store = [
     preview: dubai2,
     price: 550,
     header: 'Abu Dhabi - Dubai',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -153,6 +203,9 @@ const Store = [
     preview: dubai3,
     price: 550,
     header: 'City - Dubai',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -160,6 +213,9 @@ const Store = [
     preview: maldives1,
     price: 550,
     header: 'Maldives',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -167,6 +223,9 @@ const Store = [
     preview: maldives2,
     price: 550,
     header: 'Maldives',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
   {
@@ -174,6 +233,9 @@ const Store = [
     preview: maldives3,
     price: 550,
     header: 'Maldives',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur beatae velit quisquam suscipit accusamus, magnam placeat doloremque aliquid iusto aperiam aliquam eius est voluptatum atque, fuga voluptas sint harum provident aut nisi inventore itaque ea! Accusantium repudiandae quis inventore suscipit, quae eum. Blanditiis perspiciatis et consectetur sapiente iste optio.',
+
     text: 'A beautifull place with blue sky and a big golden sun. This is the perfect place to stay for an entire week.',
   },
 ];

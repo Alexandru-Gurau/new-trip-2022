@@ -11,7 +11,7 @@ const Offerts = () => (
         <CartItem
           key={el.id}
           id={el.id}
-          img={el.preview}
+          preview={el.preview}
           price={el.price}
           header={el.header}
           text={el.text}

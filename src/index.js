@@ -11,6 +11,7 @@ import { stripePromise } from './utils/stripe/stripe.utils';
 import { UserProvider } from './context/user.context';
 import { CartProvider } from './context/cart.context';
 import { PaymentProvider } from './context/paymentStatus.context';
+import { LinkProvider } from './context/link.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,11 +19,13 @@ root.render(
     <BrowserRouter>
       <UserProvider>
         <CartProvider>
-          <PaymentProvider>
-            <Elements stripe={stripePromise}>
-              <App />
-            </Elements>
-          </PaymentProvider>
+          <LinkProvider>
+            <PaymentProvider>
+              <Elements stripe={stripePromise}>
+                <App />
+              </Elements>
+            </PaymentProvider>
+          </LinkProvider>
         </CartProvider>
       </UserProvider>
     </BrowserRouter>

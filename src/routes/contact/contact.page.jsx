@@ -3,3 +3,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+// this should be deleted
