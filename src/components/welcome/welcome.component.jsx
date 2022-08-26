@@ -7,17 +7,17 @@ const Welcome = () => {
     <section className='welcome'>
       <div className='welcome__pictures'>
         <img
-          src={Store[0].wallpaper}
+          src={Store[0].preview}
           alt='trip wallpaper'
           className={`welcome__picture welcome__picture--1`}
         />
         <img
-          src={Store[1].wallpaper}
+          src={Store[1].preview}
           alt='trip wallpaper'
           className={`welcome__picture welcome__picture--2`}
         />
         <img
-          src={Store[2].wallpaper}
+          src={Store[2].preview}
           alt='trip wallpaper'
           className={`welcome__picture welcome__picture--3`}
         />

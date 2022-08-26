@@ -39,6 +39,11 @@
     padding: 0 10rem;
     margin-bottom: 5rem;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     @media only screen and (max-width: $bp-small) {
       padding: 0 3rem;
     }
@@ -46,7 +51,7 @@
 
   &__picture {
     height: 20rem;
-    width: 35rem;
+    width: 25rem;
     align-self: center;
     margin-bottom: 5rem;
 
@@ -55,7 +60,7 @@
     background-repeat: no-repeat;
 
     &--success {
-      background-image: url(../../assets/wallpapers/success-status.jpg);
+      background-image: url(../../assets/wallpapers/success-man.jpg);
     }
     &--emptybag {
       background-image: url(../../assets/wallpapers/empty-bag.jpg);

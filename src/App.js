@@ -8,6 +8,7 @@ import Contact from './routes/contact/contact.page';
 import TripsPage from './routes/trips/trips.page';
 import CheckoutPage from './routes/checkout/checkout.page';
 import RegisterPage from './routes/register/register.page';
+import Gallery from './routes/gallery/gallery.page';
 
 // Style
 import './App.css';
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/trips' element={<TripsPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/checkout' element={<CheckoutPage />} />
+        <Route path='/gallery/*' element={<Gallery />} />
       </Route>
     </Routes>
   );

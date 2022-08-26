@@ -3,12 +3,20 @@ import Button from '../button/button.component';
 
 import { useContext } from 'react';
 import { CartContext } from '../../context/cart.context';
+import { PaymentContext } from '../../context/paymentStatus.context';
 
 const CartItem = (cartItems) => {
   const { img, header, text, price } = cartItems;
   const { addItemToCart } = useContext(CartContext);
+  const { setPaymentStatus } = useContext(PaymentContext);
 
   const addProductToCart = () => addItemToCart(cartItems);
+  const paymentStatusReset = () => setPaymentStatus(false);
+
+  const addProductAndResetPayment = () => {
+    addProductToCart();
+    paymentStatusReset();
+  };
 
   return (
     <div className='cart-item'>
@@ -19,7 +27,7 @@ const CartItem = (cartItems) => {
         <h3 className='header-small mt-medim align-right'>Total: {price}€</h3>
       </div>
       <Button
-        onClick={addProductToCart}
+        onClick={addProductAndResetPayment}
         className='button button__normal cart-item__btn'
       >
         Add to cart

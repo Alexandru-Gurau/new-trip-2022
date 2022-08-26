@@ -26,12 +26,12 @@ const NavigationBar = () => {
     <div className='navigation__bar'>
       <div className='navigation__bar--logo'>
         <Link to='/'>
-          <p className='text-white navigation__bar--link'>HOME</p>
+          <p className='text-black navigation__bar--link'>HOME</p>
         </Link>
       </div>
       <div className='navigation__bar--links'>
         <Link to='/trips'>
-          <p className='text-white navigation__bar--link'>BOOKING</p>
+          <p className='text-black navigation__bar--link'>BOOKING</p>
         </Link>
         <Link to='/checkout'>
           <img

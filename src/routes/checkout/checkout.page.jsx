@@ -20,9 +20,9 @@ const CheckoutPage = () => {
       <div className='checkout-page'>
         <div className='checkout-page__container'>
           <h2 className='header-normal mb-large'>Checkout page</h2>
-          <div className='checkout-page__picture checkout-page__picture--emptybag'></div>
           {cartItems.length === 0 ? (
             <div className='checkout-page__message'>
+              <div className='checkout-page__picture checkout-page__picture--emptybag'></div>
               <p className='paragraph-normal align-center'>
                 Your checkout page is empty, go to booking page and add a trip
                 you like and then come back.
