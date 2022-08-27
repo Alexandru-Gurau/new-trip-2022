@@ -12,7 +12,7 @@ import { CartContext } from '../../context/cart.context';
 
 const Gallery = () => {
   const { linkPage } = useContext(LinkContext);
-  const { preview, price, header, description } = Store[linkPage - 1];
+  const { wallpaper, price, header, description } = Store[linkPage - 1];
   const { addItemToCart } = useContext(CartContext);
 
   const addProductToCart = () => addItemToCart(Store[linkPage - 1]);
@@ -21,7 +21,7 @@ const Gallery = () => {
     <div className='gallery-page'>
       <div className='gallery-page__container'>
         <div className='gallery-page__picture'>
-          <img src={preview} alt={header} className='gallery-page__img' />
+          <img src={wallpaper} alt={header} className='gallery-page__img' />
         </div>
         <div className='gallery-page__actions'>
           <h2 className='header-normal text-black'>{header}</h2>
