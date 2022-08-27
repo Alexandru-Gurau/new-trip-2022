@@ -1,4 +1,5 @@
 import './reviews.styles.scss';
+import React from 'react';
 
 import reviews from '../../store/reviews';
 
@@ -9,6 +10,7 @@ import {
   ButtonBack,
   ButtonNext,
 } from 'pure-react-carousel';
+
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Reviews = () => (
